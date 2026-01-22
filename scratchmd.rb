@@ -5,20 +5,20 @@
 class Scratchmd < Formula
   desc "Sync local Markdown files with your CMS (Webflow, WordPress, etc). (TEST RELEASE)"
   homepage "https://github.com/whalesync/scratch-cli"
-  version "0.2.5-test"
+  version "0.4.0-test"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/whalesync/scratch-cli/releases/download/v0.2.5-test/scratchmd-test_darwin_amd64.tar.gz"
-      sha256 "b72c17576f25c1cc5d354c8de23d982d2faf7a8a975198b2a6f535fb48e8bbc7"
+      url "https://github.com/whalesync/scratch-cli/releases/download/v0.4.0-test/scratchmd-test_darwin_amd64.tar.gz"
+      sha256 "233a7712d4eaa8b873b575aec158189fd668ae0ed33f115764f1848bebf3e055"
 
       def install
         bin.install "scratchmd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/whalesync/scratch-cli/releases/download/v0.2.5-test/scratchmd-test_darwin_arm64.tar.gz"
-      sha256 "2158b8bff1cdb8a41712bee53c5a9caa733e9de8ea7af1763abdb0ab24f2f4c3"
+      url "https://github.com/whalesync/scratch-cli/releases/download/v0.4.0-test/scratchmd-test_darwin_arm64.tar.gz"
+      sha256 "00743a946c20b997e44f8da187972c04cdce934e0d099baedbb936c99ff34f01"
 
       def install
         bin.install "scratchmd"
@@ -28,15 +28,15 @@ class Scratchmd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/whalesync/scratch-cli/releases/download/v0.2.5-test/scratchmd-test_linux_amd64.tar.gz"
-      sha256 "29682ccb74202a7627381073e6c05dbdaa494e98b2c52bb25c51926a43b268d6"
+      url "https://github.com/whalesync/scratch-cli/releases/download/v0.4.0-test/scratchmd-test_linux_amd64.tar.gz"
+      sha256 "ac2160f9e724a893be2a24402feab10e5f122fb0d12cf3f015f98e0564171abe"
       def install
         bin.install "scratchmd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/whalesync/scratch-cli/releases/download/v0.2.5-test/scratchmd-test_linux_arm64.tar.gz"
-      sha256 "0027c1216d279629299b027d76a4518d9f59f061d0205bf08e8ce53ed99907ee"
+      url "https://github.com/whalesync/scratch-cli/releases/download/v0.4.0-test/scratchmd-test_linux_arm64.tar.gz"
+      sha256 "3596978f5773575572dff0a40a7bed76fe266053679e66c945f4c445c93c079e"
       def install
         bin.install "scratchmd"
       end
