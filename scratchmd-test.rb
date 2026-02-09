@@ -10,7 +10,7 @@ class ScratchmdTest < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/whalesync/scratch-cli/releases/download/v0.3.2-test/scratchmd-test_darwin_amd64.tar.gz"
-      sha256 "ff89836c280d833d8f4f8cf835ec14fbffa872f753c67d6d87c2ec8f8690d893"
+      sha256 "cc3abdb377034330dcfd3d9122fe2f6ae2a1f43fb2cbd3e7a4815a42f8730ecb"
 
       def install
         bin.install "scratchmd-test"
@@ -18,7 +18,7 @@ class ScratchmdTest < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/whalesync/scratch-cli/releases/download/v0.3.2-test/scratchmd-test_darwin_arm64.tar.gz"
-      sha256 "b0c077478f075c39dee05a6c16463cb5d1c713ba3c12fc4cb4839b892797e9ca"
+      sha256 "4308eb7931c5e544f45d8023b7c3fe0f5e34b0be33fa74f0b128122d91922dc1"
 
       def install
         bin.install "scratchmd-test"
@@ -29,14 +29,14 @@ class ScratchmdTest < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/whalesync/scratch-cli/releases/download/v0.3.2-test/scratchmd-test_linux_amd64.tar.gz"
-      sha256 "d6d79494f65ec2a0ba094d55f5fb636b44a1702ddc961f1ac75bbb7d952dc51a"
+      sha256 "086c991798b5f66f367a64e029fce259792ae02884229b2d6707ffc1b38a2a46"
       def install
         bin.install "scratchmd-test"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/whalesync/scratch-cli/releases/download/v0.3.2-test/scratchmd-test_linux_arm64.tar.gz"
-      sha256 "3a2743e22d1e9cbe7a17c60416edfac21d7750b5ce2046de6bee57477249fec5"
+      sha256 "8019e2c445cb7ada2d62c63c172fe62d54afe0b8ce872427c7d6b4cbe68b1ceb"
       def install
         bin.install "scratchmd-test"
       end
